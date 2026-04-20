@@ -1,0 +1,100 @@
+import React, { useState, useEffect } from "react";
+import { motion } from "framer-motion";
+import { supabase } from "@/lib/supabase";
+import ProductCard from "@/components/products/ProductCard";
+import CategoryFilter from "@/components/products/CategoryFilter";
+
+export default function Collection() {
+  const [activeCat, setActiveCat] = useState("all");
+  const [products, setProducts] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const cat = params.get("cat");
+    if (cat) setActiveCat(cat);
+  }, []);
+
+  useEffect(() => {
+    async function fetchProducts() {
+      setLoading(true);
+      const { data, error } = await supabase
+        .from("products")
+        .select("*")
+        .order("created_at", { ascending: false });
+
+      if (!error && data) setProducts(data);
+      setLoading(false);
+    }
+    fetchProducts();
+  }, []);
+
+  const topSubValues = [
+    "top_alca", "top_bella_shopee", "top_dry_fit",
+    "top_estampado", "top_faixa", "top_nadador",
+  ];
+
+  const filtered =
+    activeCat === "all"
+      ? products
+      : activeCat === "top"
+        ? products.filter((p) => p.category === "top" || topSubValues.includes(p.category))
+        : products.filter((p) => p.category === activeCat);
+
+  return (
+    <div className="pt-32 pb-24">
+      <div className="max-w-7xl mx-auto px-6 lg:px-12">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-16"
+        >
+          <span className="text-xs tracking-luxe uppercase text-primary">
+            Nossa Coleção
+          </span>
+          <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl mt-4">
+            Moda Fitness <em className="text-primary">Premium</em>
+          </h1>
+          <p className="text-muted-foreground text-lg mt-6 max-w-xl mx-auto">
+            Peças selecionadas com carinho para sua loja. Passe o mouse sobre
+            uma peça e clique no WhatsApp para solicitar atacado.
+          </p>
+        </motion.div>
+
+        <div className="mb-16">
+          <CategoryFilter active={activeCat} onChange={setActiveCat} />
+        </div>
+
+        {loading ? (
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
+            {Array(8)
+              .fill(0)
+              .map((_, i) => (
+                <div key={i} className="animate-pulse">
+                  <div className="aspect-[3/4] bg-muted mb-4" />
+                  <div className="h-3 bg-muted w-20 mb-2" />
+                  <div className="h-5 bg-muted w-40" />
+                </div>
+              ))}
+          </div>
+        ) : filtered.length === 0 ? (
+          <div className="text-center py-20">
+            <p className="font-serif text-2xl text-muted-foreground">
+              Nenhum produto encontrado nesta categoria.
+            </p>
+            <p className="text-muted-foreground mt-2">
+              Cadastre produtos pelo painel admin ou selecione outra categoria.
+            </p>
+          </div>
+        ) : (
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+            {filtered.map((product, i) => (
+              <ProductCard key={product.id} product={product} index={i} />
+            ))}
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}
