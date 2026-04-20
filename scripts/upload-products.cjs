@@ -83,7 +83,8 @@ async function main() {
       ".avif": "image/avif",
     };
 
-    const storagePath = `${category}/${Date.now()}-${file}`;
+    const safeCategory = category.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+    const storagePath = `${safeCategory}/${Date.now()}-${file}`;
 
     const { error: uploadError } = await supabase.storage
       .from(BUCKET)

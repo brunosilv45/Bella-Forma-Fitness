@@ -34,11 +34,25 @@ export default function Collection() {
     "top_estampado", "top_faixa", "top_nadador",
   ];
 
+  const macacaoSubValues = [
+    "macacão_saia", "macacão_curto", "macacão_longo",
+  ];
+
+  const glossSubValues = [
+    "gloss_calca", "gloss_short",
+  ];
+
+  const groupMap = {
+    top: topSubValues,
+    "macacão": macacaoSubValues,
+    gloss: glossSubValues,
+  };
+
   const filtered =
     activeCat === "all"
       ? products
-      : activeCat === "top"
-        ? products.filter((p) => p.category === "top" || topSubValues.includes(p.category))
+      : groupMap[activeCat]
+        ? products.filter((p) => p.category === activeCat || groupMap[activeCat].includes(p.category))
         : products.filter((p) => p.category === activeCat);
 
   return (

@@ -8,57 +8,85 @@ const categories = [
     name: "Plus Size",
     slug: "plus_size",
     image:
-      "https://media.base44.com/images/public/69e4fe10717171f12456abe4/41ffaed09_generated_36d0eb5e.png",
+      "https://dfrjpvwdigdhxqbdgubm.supabase.co/storage/v1/object/public/product-images/plus_size/1776697543298-plus-size-01.png",
     desc: "Todas as mulheres, toda a beleza",
   },
   {
     name: "Tactel",
     slug: "tactel",
     image:
-      "https://media.base44.com/images/public/69e4fe10717171f12456abe4/2eb3b59b9_generated_dc1e381d.png",
+      "https://dfrjpvwdigdhxqbdgubm.supabase.co/storage/v1/object/public/product-images/tactel/1776697428627-tactel-azul.png",
     desc: "Shorts leves e confortáveis",
   },
   {
     name: "Tops",
     slug: "top",
     image:
-      "https://media.base44.com/images/public/69e4fe10717171f12456abe4/43e40950f_generated_03e887e1.png",
+      "https://dfrjpvwdigdhxqbdgubm.supabase.co/storage/v1/object/public/product-images/top_alca/1776698078258-top-alca-01.png",
     desc: "Alça, Dry Fit, Nadador e mais",
   },
   {
     name: "Shorts",
     slug: "short",
     image:
-      "https://media.base44.com/images/public/69e4fe10717171f12456abe4/ca85a05ac_generated_a5fe7af0.png",
+      "https://dfrjpvwdigdhxqbdgubm.supabase.co/storage/v1/object/public/product-images/short/1776699474021-short-06.png",
     desc: "Bella Fit, Duplo, Saia e mais",
   },
   {
     name: "Regatas",
     slug: "regata",
     image:
-      "https://media.base44.com/images/public/69e4fe10717171f12456abe4/34c7f7848_generated_dbdc0ebc.png",
+      "https://dfrjpvwdigdhxqbdgubm.supabase.co/storage/v1/object/public/product-images/regata/1776700804870-regata-01.png",
     desc: "Regata e Regata de Ajuste",
   },
   {
     name: "Macacão",
     slug: "macacão",
     image:
-      "https://media.base44.com/images/public/69e4fe10717171f12456abe4/b7a50503a_generated_77cf7ef2.png",
-    desc: "Peça única, máximo estilo",
+      "https://dfrjpvwdigdhxqbdgubm.supabase.co/storage/v1/object/public/product-images/macacao_saia/1776702063006-macacao-saia-01.png",
+    desc: "Saia, Curto e Longo",
   },
   {
     name: "Ciclistas",
     slug: "ciclista_lisa",
     image:
-      "https://media.base44.com/images/public/69e4fe10717171f12456abe4/710b2a6e7_generated_b17107df.png",
+      "https://dfrjpvwdigdhxqbdgubm.supabase.co/storage/v1/object/public/product-images/ciclista_lisa/1776702856583-ciclista-lisa-01.png",
     desc: "Lisa e com Bolso",
   },
   {
     name: "Cropped",
     slug: "cropped",
     image:
-      "https://media.base44.com/images/public/69e4fe10717171f12456abe4/43e40950f_generated_03e887e1.png",
+      "https://dfrjpvwdigdhxqbdgubm.supabase.co/storage/v1/object/public/product-images/cropped/1776703074816-cropped-01.png",
     desc: "Peças versáteis para o dia a dia",
+  },
+  {
+    name: "GLOSS",
+    slug: "gloss",
+    image:
+      "https://dfrjpvwdigdhxqbdgubm.supabase.co/storage/v1/object/public/product-images/gloss_calca/1776703396587-gloss-calca-01.png",
+    desc: "Calça e Short com brilho",
+  },
+  {
+    name: "Blusa de Manga",
+    slug: "blusa_de_manga",
+    image:
+      "https://dfrjpvwdigdhxqbdgubm.supabase.co/storage/v1/object/public/product-images/blusa_de_manga/1776703521305-blusa-de-manga-01.png",
+    desc: "Estilo e conforto",
+  },
+  {
+    name: "Blusa Long",
+    slug: "blusa_long",
+    image:
+      "https://dfrjpvwdigdhxqbdgubm.supabase.co/storage/v1/object/public/product-images/blusa_long/1776703598586-blusa-long-01.png",
+    desc: "Versatilidade no treino",
+  },
+  {
+    name: "Calça com Bolso",
+    slug: "calca_com_bolso",
+    image:
+      "https://dfrjpvwdigdhxqbdgubm.supabase.co/storage/v1/object/public/product-images/calca_com_bolso/1776703694456-calca-com-bolso-01.png",
+    desc: "Praticidade e estilo",
   },
 ];
 

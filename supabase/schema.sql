@@ -12,9 +12,11 @@ create table if not exists public.products (
 -- plus_size, tactel, top, top_alca, top_bella_shopee, top_dry_fit,
 -- top_estampado, top_faixa, top_nadador, short, short_bella_fit,
 -- short_com_bolso, short_com_detalhes, short_duplo, short_saia,
--- regata, regata_de_ajuste, macacão, calca_shopee,
--- ciclista_com_bolso, ciclista_lisa, cirre_3d, cropped, gloss,
--- blusa_de_manga, blusa_long, calca_com_bolso, calca_com_detalhes
+-- regata, regata_de_ajuste,
+-- macacão, macacão_saia, macacão_curto, macacão_longo,
+-- calca_shopee, ciclista_com_bolso, ciclista_lisa, cirre_3d,
+-- cropped, gloss, gloss_calca, gloss_short, blusa_de_manga, blusa_long,
+-- calca_com_bolso, calca_com_detalhes
 
 alter table public.products enable row level security;
 
