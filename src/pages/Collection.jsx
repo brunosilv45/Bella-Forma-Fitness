@@ -30,13 +30,14 @@ export default function Collection() {
   }, []);
 
   const groupMap = {
-    top: ["top_alca", "top_bella", "top_dry_fit", "top_estampado", "top_faixa", "top_nadador"],
-    shorts: ["short", "short_bella_fit", "short_com_bolso", "short_com_detalhes", "short_duplo", "short_saia"],
-    calcas: ["calca", "calca_com_bolso", "calca_com_detalhes"],
-    blusas: ["blusa_de_manga", "blusa_long"],
-    "macacão": ["macacão_saia", "macacão_curto", "macacão_longo"],
+    calcas: ["calca_lisa", "calca_com_bolso"],
+    shorts: ["short_liso", "short_com_bolso"],
     ciclista: ["ciclista_lisa", "ciclista_com_bolso"],
-    gloss: ["gloss_calca", "gloss_short"],
+    regata: ["regata_nadador", "regata_tapa_bumbum", "regata_arrastao", "regata_tule"],
+    blusas: ["blusa_com_manga", "blusa_long"],
+    top: ["top_faixa", "top_nadador", "top_regata"],
+    macacao: ["macacao_curto", "macacao_longo"],
+    plus_size: ["plus_size_top", "plus_size_regata", "plus_size_blusa", "plus_size_ciclista", "plus_size_calca"],
   };
 
   const filtered =

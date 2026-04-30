@@ -5,88 +5,67 @@ import { ArrowUpRight } from "lucide-react";
 
 const categories = [
   {
-    name: "Plus Size",
-    slug: "plus_size",
+    name: "Calças",
+    slug: "calcas",
     image:
-      "https://dfrjpvwdigdhxqbdgubm.supabase.co/storage/v1/object/public/product-images/plus_size/1776697543298-plus-size-01.png",
-    desc: "Todas as mulheres, toda a beleza",
-  },
-  {
-    name: "Tactel",
-    slug: "tactel",
-    image:
-      "https://dfrjpvwdigdhxqbdgubm.supabase.co/storage/v1/object/public/product-images/tactel/1776697428627-tactel-azul.png",
-    desc: "Shorts leves e confortáveis",
-  },
-  {
-    name: "Tops",
-    slug: "top",
-    image:
-      "https://dfrjpvwdigdhxqbdgubm.supabase.co/storage/v1/object/public/product-images/top_alca/1776698078258-top-alca-01.png",
-    desc: "Alça, Dry Fit, Nadador e mais",
+      "https://dfrjpvwdigdhxqbdgubm.supabase.co/storage/v1/object/public/product-images/calca_com_bolso/1776703694456-calca-com-bolso-01.png",
+    desc: "Lisa e com Bolso",
   },
   {
     name: "Shorts",
-    slug: "short",
+    slug: "shorts",
     image:
       "https://dfrjpvwdigdhxqbdgubm.supabase.co/storage/v1/object/public/product-images/short/1776699474021-short-06.png",
-    desc: "Bella Fit, Duplo, Saia e mais",
+    desc: "Liso e com Bolso",
+  },
+  {
+    name: "Ciclistas",
+    slug: "ciclista",
+    image:
+      "https://dfrjpvwdigdhxqbdgubm.supabase.co/storage/v1/object/public/product-images/ciclista_lisa/1776702856583-ciclista-lisa-01.png",
+    desc: "Lisa e com Bolso",
   },
   {
     name: "Regatas",
     slug: "regata",
     image:
       "https://dfrjpvwdigdhxqbdgubm.supabase.co/storage/v1/object/public/product-images/regata/1776700804870-regata-01.png",
-    desc: "Regata e Regata de Ajuste",
+    desc: "Nadador, Tapa Bumbum, Arrastão e Tule",
   },
   {
-    name: "Macacão",
-    slug: "macacão",
+    name: "Blusas",
+    slug: "blusas",
     image:
-      "https://dfrjpvwdigdhxqbdgubm.supabase.co/storage/v1/object/public/product-images/macacao_saia/1776702063006-macacao-saia-01.png",
-    desc: "Saia, Curto e Longo",
+      "https://dfrjpvwdigdhxqbdgubm.supabase.co/storage/v1/object/public/product-images/blusa_long/1776703598586-blusa-long-01.png",
+    desc: "Com Manga e Long",
   },
   {
-    name: "Ciclistas",
-    slug: "ciclista_lisa",
-    image:
-      "https://dfrjpvwdigdhxqbdgubm.supabase.co/storage/v1/object/public/product-images/ciclista_lisa/1776702856583-ciclista-lisa-01.png",
-    desc: "Lisa e com Bolso",
-  },
-  {
-    name: "Cropped",
+    name: "Croppeds",
     slug: "cropped",
     image:
       "https://dfrjpvwdigdhxqbdgubm.supabase.co/storage/v1/object/public/product-images/cropped/1776703074816-cropped-01.png",
     desc: "Peças versáteis para o dia a dia",
   },
   {
-    name: "GLOSS",
-    slug: "gloss",
+    name: "Tops",
+    slug: "top",
     image:
-      "https://dfrjpvwdigdhxqbdgubm.supabase.co/storage/v1/object/public/product-images/gloss_calca/1776703396587-gloss-calca-01.png",
-    desc: "Calça e Short com brilho",
+      "https://dfrjpvwdigdhxqbdgubm.supabase.co/storage/v1/object/public/product-images/top_alca/1776698078258-top-alca-01.png",
+    desc: "Faixa, Nadador e Regata",
   },
   {
-    name: "Blusa de Manga",
-    slug: "blusa_de_manga",
+    name: "Macacão",
+    slug: "macacao",
     image:
-      "https://dfrjpvwdigdhxqbdgubm.supabase.co/storage/v1/object/public/product-images/blusa_de_manga/1776703521305-blusa-de-manga-01.png",
-    desc: "Estilo e conforto",
+      "https://dfrjpvwdigdhxqbdgubm.supabase.co/storage/v1/object/public/product-images/macacao_saia/1776702063006-macacao-saia-01.png",
+    desc: "Curto e Longo",
   },
   {
-    name: "Blusa Long",
-    slug: "blusa_long",
+    name: "Plus Size",
+    slug: "plus_size",
     image:
-      "https://dfrjpvwdigdhxqbdgubm.supabase.co/storage/v1/object/public/product-images/blusa_long/1776703598586-blusa-long-01.png",
-    desc: "Versatilidade no treino",
-  },
-  {
-    name: "Calça com Bolso",
-    slug: "calca_com_bolso",
-    image:
-      "https://dfrjpvwdigdhxqbdgubm.supabase.co/storage/v1/object/public/product-images/calca_com_bolso/1776703694456-calca-com-bolso-01.png",
-    desc: "Praticidade e estilo",
+      "https://dfrjpvwdigdhxqbdgubm.supabase.co/storage/v1/object/public/product-images/plus_size/1776697543298-plus-size-01.png",
+    desc: "Top, Regatas, Blusas, Ciclista e Calça",
   },
 ];
 
