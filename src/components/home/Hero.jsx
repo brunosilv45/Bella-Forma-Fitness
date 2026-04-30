@@ -42,7 +42,7 @@ export default function Hero() {
 
           <div className="flex items-center gap-8 mt-16 pt-8 border-t border-border">
             <div>
-              <p className="font-serif text-3xl text-primary">PP–G4</p>
+              <p className="font-serif text-3xl text-primary">P–G3</p>
               <p className="text-xs tracking-luxe uppercase text-muted-foreground mt-1">
                 Tamanhos
               </p>
