@@ -37,6 +37,7 @@ const topSubs = [
 const macacaoSubs = [
   { value: "macacao_curto", label: "Curto" },
   { value: "macacao_longo", label: "Longo" },
+  { value: "macacao_saia", label: "Saia" },
 ];
 
 const plusSizeSubs = [
