@@ -29,23 +29,14 @@ export default function Collection() {
     fetchProducts();
   }, []);
 
-  const topSubValues = [
-    "top_alca", "top_bella_shopee", "top_dry_fit",
-    "top_estampado", "top_faixa", "top_nadador",
-  ];
-
-  const macacaoSubValues = [
-    "macacão_saia", "macacão_curto", "macacão_longo",
-  ];
-
-  const glossSubValues = [
-    "gloss_calca", "gloss_short",
-  ];
-
   const groupMap = {
-    top: topSubValues,
-    "macacão": macacaoSubValues,
-    gloss: glossSubValues,
+    top: ["top_alca", "top_bella", "top_dry_fit", "top_estampado", "top_faixa", "top_nadador"],
+    shorts: ["short", "short_bella_fit", "short_com_bolso", "short_com_detalhes", "short_duplo", "short_saia"],
+    calcas: ["calca", "calca_com_bolso", "calca_com_detalhes"],
+    blusas: ["blusa_de_manga", "blusa_long"],
+    "macacão": ["macacão_saia", "macacão_curto", "macacão_longo"],
+    ciclista: ["ciclista_lisa", "ciclista_com_bolso"],
+    gloss: ["gloss_calca", "gloss_short"],
   };
 
   const filtered =

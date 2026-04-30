@@ -3,11 +3,31 @@ import { ChevronDown } from "lucide-react";
 
 const topSubs = [
   { value: "top_alca", label: "Top Alça" },
-  { value: "top_bella_shopee", label: "Top Bella Shopee" },
+  { value: "top_bella", label: "Top Bella" },
   { value: "top_dry_fit", label: "Top Dry Fit" },
   { value: "top_estampado", label: "Top Estampado" },
   { value: "top_faixa", label: "Top Faixa" },
   { value: "top_nadador", label: "Top Nadador" },
+];
+
+const shortSubs = [
+  { value: "short", label: "Short Liso" },
+  { value: "short_bella_fit", label: "Short Bella Fit" },
+  { value: "short_com_bolso", label: "Short com Bolso" },
+  { value: "short_com_detalhes", label: "Short com Detalhes" },
+  { value: "short_duplo", label: "Short Duplo" },
+  { value: "short_saia", label: "Short Saia" },
+];
+
+const calcaSubs = [
+  { value: "calca", label: "Calça Lisa" },
+  { value: "calca_com_bolso", label: "Calça com Bolso" },
+  { value: "calca_com_detalhes", label: "Calça com Detalhes" },
+];
+
+const blusaSubs = [
+  { value: "blusa_de_manga", label: "Blusa de Manga" },
+  { value: "blusa_long", label: "Blusa Long" },
 ];
 
 const macacaoSubs = [
@@ -16,41 +36,37 @@ const macacaoSubs = [
   { value: "macacão_longo", label: "Macacão Longo" },
 ];
 
+const ciclistaSubs = [
+  { value: "ciclista_lisa", label: "Ciclista Lisa" },
+  { value: "ciclista_com_bolso", label: "Ciclista com Bolso" },
+];
+
 const glossSubs = [
-  { value: "gloss_calca", label: "Calça" },
-  { value: "gloss_short", label: "Short" },
+  { value: "gloss_calca", label: "Calça Gloss" },
+  { value: "gloss_short", label: "Short Gloss" },
 ];
 
 const cats = [
   { value: "all", label: "Todas" },
-  { value: "plus_size", label: "Plus Size" },
-  { value: "tactel", label: "Tactel" },
   { value: "top", label: "Top", subs: topSubs, allLabel: "Todos os Tops" },
-  { value: "short", label: "Short" },
-  { value: "short_bella_fit", label: "Short Bella Fit" },
-  { value: "short_com_bolso", label: "Short com Bolso" },
-  { value: "short_com_detalhes", label: "Short com Detalhes" },
-  { value: "short_duplo", label: "Short Duplo" },
-  { value: "short_saia", label: "Short Saia" },
+  { value: "shorts", label: "Short", subs: shortSubs, allLabel: "Todos os Shorts" },
+  { value: "calcas", label: "Calça", subs: calcaSubs, allLabel: "Todas as Calças" },
+  { value: "blusas", label: "Blusa", subs: blusaSubs, allLabel: "Todas as Blusas" },
+  { value: "macacão", label: "Macacão", subs: macacaoSubs, allLabel: "Todos os Macacões" },
+  { value: "ciclista", label: "Ciclista", subs: ciclistaSubs, allLabel: "Todas as Ciclistas" },
+  { value: "gloss", label: "Gloss", subs: glossSubs, allLabel: "Todos os Gloss" },
   { value: "regata", label: "Regata" },
   { value: "regata_de_ajuste", label: "Regata de Ajuste" },
-  { value: "macacão", label: "Macacão", subs: macacaoSubs, allLabel: "Todos os Macacões" },
-  { value: "calca_shopee", label: "Calça Shopee" },
-  { value: "ciclista_com_bolso", label: "Ciclista com Bolso" },
-  { value: "ciclista_lisa", label: "Ciclista Lisa" },
-  { value: "cirre_3d", label: "Cirrê 3D" },
   { value: "cropped", label: "Cropped" },
-  { value: "gloss", label: "GLOSS", subs: glossSubs, allLabel: "Todos os GLOSS" },
-  { value: "blusa_de_manga", label: "Blusa de Manga" },
-  { value: "blusa_long", label: "Blusa Long" },
-  { value: "calca_com_bolso", label: "Calça com Bolso" },
-  { value: "calca_com_detalhes", label: "Calça com Detalhes" },
+  { value: "cirre_3d", label: "Cirrê 3D" },
+  { value: "tactel", label: "Tactel" },
+  { value: "plus_size", label: "Plus Size" },
 ];
 
-const allTopValues = topSubs.map((s) => s.value);
-const allMacacaoValues = macacaoSubs.map((s) => s.value);
-const allGlossValues = glossSubs.map((s) => s.value);
-const allSubValues = [...allTopValues, ...allMacacaoValues, ...allGlossValues];
+const allSubValues = [
+  ...topSubs, ...shortSubs, ...calcaSubs, ...blusaSubs,
+  ...macacaoSubs, ...ciclistaSubs, ...glossSubs,
+].map((s) => s.value);
 
 export default function CategoryFilter({ active, onChange }) {
   const [openMenu, setOpenMenu] = useState(null);
