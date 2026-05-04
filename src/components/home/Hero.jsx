@@ -74,8 +74,8 @@ export default function Hero() {
           <div className="absolute -bottom-8 -left-8 w-40 h-40 bg-primary/10 rounded-full blur-3xl" />
           <div className="relative aspect-[3/4] overflow-hidden bg-muted">
             <img
-              src="https://media.base44.com/images/public/69e4fe10717171f12456abe4/b7a50503a_generated_77cf7ef2.png"
-              alt="Bella Forma Fitness"
+              src="https://dfrjpvwdigdhxqbdgubm.supabase.co/storage/v1/object/public/product-images/blusa_de_manga/1776703523251-blusa-de-manga-03.png"
+              alt="Blusa Com Manga Branca"
               className="w-full h-full object-cover"
             />
           </div>
@@ -84,7 +84,7 @@ export default function Hero() {
               Destaque
             </p>
             <p className="font-serif text-xl text-foreground mt-1">
-              Conjunto Esmeralda
+              Blusa Com Manga Branca
             </p>
           </div>
         </motion.div>
