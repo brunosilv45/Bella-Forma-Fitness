@@ -31,9 +31,9 @@ export default function Collection() {
 
   const groupMap = {
     calcas: ["calca_lisa", "calca_com_bolso", "calca_com_detalhes", "gloss_calca", "cirre_3d"],
-    shorts: ["short_liso", "short_com_bolso", "short", "short_duplo", "short_com_detalhes", "short_bella_fit", "short_saia", "gloss_short", "tactel"],
+    shorts: ["short_liso", "short_com_bolso", "short_duplo", "short_com_detalhes", "short_bella_fit", "short_saia", "gloss_short", "tactel"],
     ciclista: ["ciclista_lisa", "ciclista_com_bolso"],
-    regata: ["regata_nadador", "regata_tapa_bumbum", "regata_arrastao", "regata_tule", "regata", "regata_de_ajuste"],
+    regata: ["regata_nadador", "regata_arrastao", "regata_tule", "regata_de_ajuste"],
     blusas: ["blusa_com_manga", "blusa_long", "blusa_de_manga"],
     top: ["top_faixa", "top_nadador", "top_regata", "top_dry_fit", "top_estampado", "top_alca"],
     macacao: ["macacao_curto", "macacao_longo", "macacao_saia"],

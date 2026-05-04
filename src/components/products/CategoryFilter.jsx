@@ -18,9 +18,9 @@ const ciclistaSubs = [
 
 const regataSubs = [
   { value: "regata_nadador", label: "Nadador" },
-  { value: "regata_tapa_bumbum", label: "Tapa Bumbum" },
   { value: "regata_arrastao", label: "Arrastão" },
   { value: "regata_tule", label: "Tule" },
+  { value: "regata_de_ajuste", label: "De Ajuste" },
 ];
 
 const blusaSubs = [

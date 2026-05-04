@@ -43,10 +43,7 @@ export default function ProductCard({ product, index = 0 }) {
           </a>
         </div>
       </div>
-      <p className="text-xs tracking-luxe uppercase text-muted-foreground">
-        {product.category}
-      </p>
-      <h3 className="font-serif text-lg md:text-xl text-foreground mt-1 group-hover:text-primary transition-colors">
+      <h3 className="font-serif text-lg md:text-xl text-foreground group-hover:text-primary transition-colors">
         {product.name}
       </h3>
       {product.description && (
