@@ -34,7 +34,7 @@ export default function Collection() {
     shorts: ["short_liso", "short_com_bolso", "short_duplo", "short_com_detalhes", "short_bella_fit", "short_saia", "gloss_short", "tactel"],
     ciclista: ["ciclista_lisa", "ciclista_com_bolso"],
     regata: ["regata_nadador", "regata_arrastao", "regata_tule", "regata_de_ajuste"],
-    blusas: ["blusa_com_manga", "blusa_long", "blusa_de_manga", "blusa_tule"],
+    blusas: ["blusa_com_manga", "blusa_long", "blusa_de_manga", "blusa_tule", "blusa_arrastao"],
     top: ["top_faixa", "top_nadador", "top_regata", "top_dry_fit", "top_estampado", "top_alca"],
     macacao: ["macacao_curto", "macacao_longo", "macacao_saia"],
     plus_size: ["plus_size_top", "plus_size_regata", "plus_size_blusa", "plus_size_ciclista", "plus_size_calca"],

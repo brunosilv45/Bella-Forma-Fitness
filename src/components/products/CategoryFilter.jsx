@@ -27,6 +27,7 @@ const blusaSubs = [
   { value: "blusa_com_manga", label: "Com Manga" },
   { value: "blusa_long", label: "Long" },
   { value: "blusa_tule", label: "Tule" },
+  { value: "blusa_arrastao", label: "Arrastão" },
 ];
 
 const topSubs = [
