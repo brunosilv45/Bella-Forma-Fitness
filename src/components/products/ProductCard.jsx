@@ -1,10 +1,12 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { MessageCircle } from "lucide-react";
+import { getGarmentCategoryLabel } from "@/lib/productCategoryLabel";
 
 export default function ProductCard({ product, index = 0 }) {
+  const tipo = getGarmentCategoryLabel(product.category);
   const whatsappText = encodeURIComponent(
-    `Olá! Tenho interesse na peça "${product.name}" (${product.category}). Gostaria de saber mais sobre preços no atacado.`
+    `Olá! Tenho interesse na peça (${tipo}) — "${product.name}". Queria saber preços no atacado.`
   );
 
   const mainImage =
@@ -23,7 +25,7 @@ export default function ProductCard({ product, index = 0 }) {
         {mainImage ? (
           <img
             src={mainImage}
-            alt={product.name}
+            alt={`${tipo}: ${product.name}`}
             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
           />
         ) : (
@@ -43,7 +45,10 @@ export default function ProductCard({ product, index = 0 }) {
           </a>
         </div>
       </div>
-      <h3 className="font-serif text-lg md:text-xl text-foreground group-hover:text-primary transition-colors">
+      <p className="text-[10px] md:text-xs tracking-luxe uppercase text-primary mb-1.5">
+        {tipo}
+      </p>
+      <h3 className="font-serif text-lg md:text-xl text-foreground group-hover:text-primary transition-colors leading-snug">
         {product.name}
       </h3>
       {product.description && (
